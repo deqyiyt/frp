@@ -1,0 +1,8 @@
+docker run \
+--restart=always \
+--name fish.frpc \
+--network host \
+-v /root/frpc/frpc.ini:/frp/frps.ini \
+-v /etc/localtime:/etc/localtime:ro \
+-d newnius/frp:v0.21.0
+

@@ -1,0 +1,8 @@
+docker run --restart=always --name fish.frps \
+	--network fish \
+	-p 122:122 \
+	-p 180:180 \
+	-p 1443:1443 \
+	-v /usr/local/docker/frp/frps/frps.ini:/frp/frps.ini \
+	-v /etc/localtime:/etc/localtime:ro \
+	-d newnius/frp:v0.21.0

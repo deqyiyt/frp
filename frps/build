@@ -1,0 +1,1 @@
+docker build -t fishkj/frps:0.21.0 -f ./Dockerfile ./
